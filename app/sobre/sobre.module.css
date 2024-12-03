@@ -83,6 +83,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  text-align: center; /* Centraliza o conteúdo dentro do main */
 }
 
 .images {
@@ -101,7 +102,7 @@
   font-size: 24px;
   font-weight: bold;
   margin: 0;
-  text-align: center;
+  text-align: center; /* Centraliza o título */
 }
 
 .infoSection {
@@ -166,4 +167,52 @@
 .socialIcons img {
   width: 20px;
   height: 20px;
+}
+
+/* Centralizando o título na página */
+.titleSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Ajuste a altura conforme necessário */
+  background-color: #f3f4f6; /* Cor de fundo suave */
+  margin-top: 20px; /* Espaço acima da seção */
+}
+
+/* Ajuste para a seção do título */
+.titleSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Ajusta a altura automaticamente para se ajustar ao conteúdo */
+  padding: 10px 0; /* Reduzindo o padding superior e inferior para deixar a altura mais fina */
+  background-color: #f3f4f6; /* Cor de fundo suave */
+  margin-top: 20px; /* Espaço acima da seção */
+}
+
+/* Ajuste para o título */
+.title {
+  font-size: 1.75rem; /* Mantendo o tamanho do título (você pode reduzir se quiser) */
+  text-align: center;
+  color: #333; /* Cor do texto */
+  font-weight: bold;
+  padding: 0 20px; /* Apenas ajustando o padding lateral */
+  max-width: 80%; /* Evitar que o título ultrapasse a largura */
+  line-height: 1.5;
+}
+
+/* Adicional: Para garantir que todo o conteúdo no site tenha texto centralizado */
+.text-box p {
+  text-align: center; /* Centraliza o texto da caixa de texto */
+  margin: 0 auto;
+  font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+  max-width: 80%; /* Limita a largura do parágrafo */
+}
+
+.mainContent img {
+  width: 50%; /* Reduzindo a largura da imagem para 50% do tamanho original */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-top: 20px; /* Adicionando um pequeno espaçamento acima da imagem */
+  border-radius: 8px; /* Bordas arredondadas (opcional) */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional para um visual mais moderno */
 }

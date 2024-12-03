@@ -1,37 +1,48 @@
-'use client';
-
 import Link from "next/link";
-import Image from "next/image";
-import styles from "./estilos.module.css"; 
+import styles from "./estilos.module.css";
+import Image from "next/image"; // Importando o componente Image do Next.js
 
-const Estilos: React.FC = () => {
+const BarbeariaBomDeGuerra: React.FC = () => {
   return (
-    <div>
-      <header>
-        <div className="logo-container">
+    <div className={styles.container}>
+      <header className={styles.header}>
+        <div className={styles.logoContainer}>
           <img src="imgs/logo.PNG" alt="Barbearia Bom de Guerra" />
-          <h1>Barbearia do Siri</h1>
+          <h1 className={styles.logoText}>Barbearia do Siri</h1>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/estilos">Estilos</Link>
-            </li>
-            <li>
-              <Link href="/">Início</Link>
-            </li>
-            <li>
-              <Link href="/sobre">Sobre</Link>
-            </li>
-          </ul>
-        </nav>
-        <Link href="#login">
-          <button className="login-button">Iniciar Sessão</button>
+        <div className={styles.navContainer}>
+          <nav className={styles.nav}>
+            <ul className={styles.navList}>
+              <li>
+                <Link href="/estilos" className={styles.navLink}>
+                  Estilos
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className={styles.navLink}>
+                  Início
+                </Link>
+              </li>
+              <li>
+                <Link href="/sobre" className={styles.navLink}>
+                  Sobre
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <Link href="#login" className={styles.loginButton}>
+          Iniciar Sessão
         </Link>
       </header>
 
+      {/* Título Centralizado */}
+      <section className={styles.titleSection}>
+        <h2 className={styles.title}>Explore os estilos e cortes que realizamos.</h2>
+      </section>
+
+      {/* Seção Estilos de Corte - Imagens abaixo do título */}
       <section className={styles["main-content"]}>
-        <h1>Estilos de Corte</h1>
         <div className={styles["styles-container"]}>
           <div className={styles["style-item"]}>
             <Image
@@ -68,6 +79,7 @@ const Estilos: React.FC = () => {
           </div>
         </div>
       </section>
+
       <br />
 
       <section className={styles["main-content"]}>
@@ -108,32 +120,14 @@ const Estilos: React.FC = () => {
         </div>
       </section>
 
-      <section className={styles["info-section"]}>
-        <div>
-          <img src="imgs/mapa.png" alt="Endereço" />
-          <p>R. Laudelino Rocha, 135 - Loja 03 - Maurício de Nassau, Caruaru - PE, 55012-690</p>
-        </div>
-        <div>
-          <img src="imgs/barbeiro.png" alt="Equipe" />
-          <p>Contamos com uma equipe especializada para atender suas necessidades.</p>
-        </div>
-        <div>
-          <img src="imgs/renda.png" alt="Preços" />
-          <p>Oferecemos serviços de alta qualidade a um preço acessível.</p>
-        </div>
-      </section>
-
+      {/* Rodapé */}
       <footer className={styles.footer}>
         <p>Siga-nos nas redes sociais</p>
-        <div className="social-icons">
-          <a href="#" onClick={(e) => e.preventDefault()}>
+        <div className={styles.socialIcons}>
+          <a href="https://wa.me/5581999999999" target="_blank" rel="noopener noreferrer">
             <img src="imgs/whatsapp.png" alt="WhatsApp" />
           </a>
-          <a
-            href="https://www.instagram.com/barbeariadoedno/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.instagram.com/barbeariadoedno/" target="_blank" rel="noopener noreferrer">
             <img src="imgs/instagram.png" alt="Instagram" />
           </a>
         </div>
@@ -141,4 +135,5 @@ const Estilos: React.FC = () => {
     </div>
   );
 };
-export default Estilos;
+
+export default BarbeariaBomDeGuerra;

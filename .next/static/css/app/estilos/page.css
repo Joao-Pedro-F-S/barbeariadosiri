@@ -1,104 +1,256 @@
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/estilos/estilos.module.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
+/* Home.css */
+.estilos_container__YnzrR {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+
+.estilos_header__LYav_ {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; /* Reduzindo a altura da navbar */
+  background: #333;
+  color: white;
+  align-items: center;
+}
+
+.estilos_logoContainer__SDPzT {
+  display: flex;
+  align-items: center;
+}
+
+.estilos_logoContainer__SDPzT img {
+  width: 20px; /* Tamanho reduzido do ícone */
+  height: 20px; /* Tamanho reduzido do ícone */
+  margin-right: 5px;
+}
+
+.estilos_logoText__VAEsJ {
+  font-size: 14px; /* Tamanho reduzido do texto */
+  font-weight: bold;
+}
+
+.estilos_navContainer__SyL8N {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; /* Centraliza o menu horizontalmente */
+}
+
+.estilos_nav__nzZcB {
+  display: flex;
+  align-items: center;
+}
+
+.estilos_navList__P2i_o {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.estilos_navLink__M5CQ1 {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px; /* Tamanho reduzido do texto */
+}
+
+.estilos_navLink__M5CQ1:hover {
+  color: rgb(20, 194, 113);
+}
+
+.estilos_loginButton__TtLxX {
+  background: #fff;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.estilos_loginButton__TtLxX:hover {
+  background-color: rgb(33, 209, 127);
+  color: #fff;
+}
+
+.estilos_mainContent__vVC1G {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center; /* Centraliza o conteúdo dentro do main */
+}
+
+.estilos_images__vKm3X {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.estilos_images__vKm3X img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.estilos_sectionTitle__FiPM4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center; /* Centraliza o título */
+}
+
+.estilos_infoSection__O7ftA {
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 10px;
+  background: #333;
+  color: white;
+  text-align: center; /* Centraliza o texto no eixo x */
+}
+
+.estilos_infoSection__O7ftA div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px; /* Reduzindo a largura */
+  text-align: center; /* Centraliza o texto no eixo x */
+  margin-bottom: 10px; /* Adiciona espaçamento entre as seções */
+}
+
+.estilos_infoSection__O7ftA img {
+  width: 30px; /* Reduzindo o tamanho da imagem */
+  height: 30px; /* Reduzindo o tamanho da imagem */
+  margin-bottom: 5px;
+}
+
+.estilos_infoSection__O7ftA p {
+  font-size: 12px; /* Aumentando o tamanho do texto */
+  margin: 5px 0;
+}
+
+.estilos_divider__Wg14f {
+  width: 1px; /* Ajusta a largura para 1px */
+  height: 100%; /* Ajusta a altura para 100% */
+  background: white;
+  margin: 0 20px; /* Adiciona espaçamento entre as divisões */
+}
+
+.estilos_footer__8aa6d {
+  display: flex;
+  flex-direction: column; /* Altera para coluna */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 10px;
+  background: #333;
+  color: white;
+  text-align: center; /* Centraliza o texto no eixo x */
+}
+
+.estilos_footer__8aa6d p {
+  margin-bottom: 10px; /* Adiciona espaçamento entre o texto e os ícones */
+}
+
+.estilos_socialIcons__KMYPF {
+  display: flex;
+  gap: 10px; /* Alinha os ícones de redes sociais horizontalmente */
+  align-items: center;
+}
+
+.estilos_socialIcons__KMYPF img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Centralizando o título na página */
+.estilos_titleSection__938zq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Ajuste a altura conforme necessário */
+  background-color: #f3f4f6; /* Cor de fundo suave */
+  margin-top: 20px; /* Espaço acima da seção */
+}
+
+.estilos_title__67Dyb {
+  font-size: 1.5rem;  /* Reduzindo ainda mais o tamanho do título */
+  text-align: center;
+  color: #333; /* Cor do texto */
+  font-weight: bold;
+  padding: 10px 20px;
+  max-width: 80%; /* Evitar que o título ultrapasse a largura */
+  line-height: 1.5;
+}
+
+
+/* Novo CSS para os estilos de corte */
 .estilos_main-content__YnmwZ {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .estilos_styles-container__W4nWd {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.estilos_styles-container__W4nWd {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas */
+  gap: 20px; /* Espaçamento entre as imagens */
+  justify-content: center; /* Centraliza as imagens na linha */
+}
+
+.estilos_style-item__sfPbE {
+  text-align: center; /* Centraliza o texto abaixo de cada imagem */
+  width: 300px; /* Define o tamanho das colunas */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinha as imagens e o texto ao centro */
+}
+
+.estilos_style-item__sfPbE img {
+  width: 100%; /* Ajusta o tamanho das imagens */
+  max-width: 125px; /* Limita o tamanho das imagens (50% de 250px) */
+  max-height: 125px; /* Limita a altura das imagens para 50% */
+  object-fit: contain; /* Garante que a imagem se ajuste sem perder qualidade */
+  border-radius: 10px; /* Bordas arredondadas nas imagens */
+  margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.estilos_style-item__sfPbE h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.estilos_style-item__sfPbE p {
+  font-size: 14px;
+  color: #666; /* Cor mais suave para o texto */
+  text-align: center; /* Garante que o texto fique centralizado */
+}
+
+/* Para garantir que as imagens fiquem em 3 colunas na tela */
+@media (min-width: 768px) {
   .estilos_style-item__sfPbE {
-    margin: 20px;
-    width: 30%;
+    width: 30%; /* Exibe 3 itens por linha */
   }
-  
-  .estilos_style-item__sfPbE h2 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .estilos_style-item__sfPbE {
+    width: 45%; /* Exibe 2 itens por linha em telas menores */
   }
-  
-  .estilos_style-item__sfPbE p {
-    font-size: 1rem;
-    color: #555;
+}
+
+@media (max-width: 480px) {
+  .estilos_style-item__sfPbE {
+    width: 90%; /* Exibe 1 item por linha em telas muito pequenas */
   }
-  
-  .estilos_footer__8aa6d {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .estilos_social-icons__IUJgI {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .estilos_social-icons__IUJgI img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-  }
-  
-  .estilos_social-icons__IUJgI img:hover {
-    transform: scale(1.1);
-  }
-  
-  .estilos_footer__8aa6d p {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .estilos_info-section__WEiG_ {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .estilos_info-section__WEiG_ div {
-    max-width: 200px;
-    flex: 1 1;
-  }
-  
-  .estilos_info-section__WEiG_ p {
-    font-size: 1rem;
-    color: #555;
-    margin-top: 10px;
-  }
-  
-.estilos_info-section__WEiG_ {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px; 
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .estilos_info-section__WEiG_ div {
-    max-width: 200px; 
-    flex: 1 1;
-  }
-  
-  .estilos_info-section__WEiG_ img {
-    max-width: 30%; 
-    height: auto; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .estilos_info-section__WEiG_ p {
-    font-size: 1rem;
-    color: #555;
-    margin-top: 10px;
-  }
-  
+}
+

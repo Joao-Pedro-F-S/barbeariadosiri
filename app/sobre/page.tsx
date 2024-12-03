@@ -1,41 +1,54 @@
 import Link from "next/link";
-import Image from "next/image";
-import styles from "./page.module.css"; 
+import styles from "./sobre.module.css";
+import Image from "next/image"; // Importando o componente Image do Next.js
 
-const Sobre: React.FC = () => {
+const BarbeariaBomDeGuerra: React.FC = () => {
   return (
-    <div>
-      <header>
-        <div className="logo-container">
-          <img src="/imgs/logo.PNG" alt="Barbearia Bom de Guerra" />
-          <h1>Barbearia do Siri</h1>
+    <div className={styles.container}>
+      <header className={styles.header}>
+        <div className={styles.logoContainer}>
+          <img src="imgs/logo.PNG" alt="Barbearia Bom de Guerra" />
+          <h1 className={styles.logoText}>Barbearia do Siri</h1>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/estilos">Estilos</Link>
-            </li>
-            <li>
-              <Link href="/">Início</Link>
-            </li>
-            <li>
-              <Link href="/sobre">Sobre</Link>
-            </li>
-          </ul>
-        </nav>
-        <Link href="#login">
-          <button className="login-button">Iniciar Sessão</button>
+        <div className={styles.navContainer}>
+          <nav className={styles.nav}>
+            <ul className={styles.navList}>
+              <li>
+                <Link href="/estilos" className={styles.navLink}>
+                  Estilos
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className={styles.navLink}>
+                  Início
+                </Link>
+              </li>
+              <li>
+                <Link href="/sobre" className={styles.navLink}>
+                  Sobre
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <Link href="#login" className={styles.loginButton}>
+          Iniciar Sessão
         </Link>
       </header>
-      
-      <section className="main-content">
-        <h1>Sobre a Barbearia</h1>
+
+      {/* Título Centralizado */}
+      <section className={styles.titleSection}>
+        <h2 className={styles.title}>Conheça um pouco sobre a Barbearia do Siri</h2>
+      </section>
+
+      {/* Seção Sobre a Barbearia */}
+      <section className={styles.mainContent}>
         <Image
           src="/imgs/sobre.jpg"
           alt="Sobre a Barbearia do Siri"
           width={1000}
           height={550}
-          className="rounded-lg shadow-lg"
+          className="rounded-lg shadow-lg" // classes para estilo
         />
         <div className="text-box">
           <p>
@@ -46,34 +59,38 @@ const Sobre: React.FC = () => {
         </div>
       </section>
 
-      <section className="info-section">
+      {/* Seção Informações */}
+      <section className={styles.infoSection}>
         <div>
-          <img src="/imgs/mapa.png" alt="Endereço" />
+          <img src="imgs/mapa.png" alt="Endereço" />
           <p>R. Laudelino Rocha, 135 - Loja 03 - Maurício de Nassau, Caruaru - PE, 55012-690</p>
         </div>
+        <div className={styles.divider}></div>
         <div>
-          <img src="/imgs/barbeiro.png" alt="Equipe" />
+          <img src="imgs/barbeiro.png" alt="Equipe" />
           <p>Contamos com uma equipe especializada para atender suas necessidades.</p>
         </div>
+        <div className={styles.divider}></div>
         <div>
-          <img src="/imgs/renda.png" alt="Preços" />
+          <img src="imgs/renda.png" alt="Preços" />
           <p>Oferecemos serviços de alta qualidade a um preço acessível.</p>
         </div>
       </section>
 
-      <footer>
+      {/* Rodapé */}
+      <footer className={styles.footer}>
         <p>Siga-nos nas redes sociais</p>
-        <div className="social-icons">
-          <Link href="https://wa.me/5581999999999" target="_blank" rel="noopener noreferrer">
-            <Image src="/imgs/whatsapp.png" alt="WhatsApp" width={40} height={40} />
-          </Link>
-          <Link href="https://www.instagram.com/barbeariadoedno/" target="_blank" rel="noopener noreferrer">
-            <Image src="/imgs/instagram.png" alt="Instagram" width={40} height={40} />
-          </Link>
+        <div className={styles.socialIcons}>
+          <a href="https://wa.me/5581999999999" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/whatsapp.png" alt="WhatsApp" />
+          </a>
+          <a href="https://www.instagram.com/barbeariadoedno/" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/instagram.png" alt="Instagram" />
+          </a>
         </div>
       </footer>
     </div>
   );
 };
 
-export default Sobre;
+export default BarbeariaBomDeGuerra;
