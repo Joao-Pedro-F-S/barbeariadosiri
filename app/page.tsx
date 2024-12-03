@@ -1,65 +1,66 @@
 import Link from "next/link";
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./css/page.module.css";
 
 const BarbeariaBomDeGuerra: React.FC = () => {
   return (
-    <div>
-      <header>
-        <div className="logo-container">
+    <div className={styles.container}>
+      <header className={styles.header}>
+        <div className={styles.logoContainer}>
           <img src="imgs/logo.PNG" alt="Barbearia Bom de Guerra" />
-          <h1>Barbearia do Siri</h1>
+          <h1 className={styles.logoText}>Barbearia do Siri</h1>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/estilos">Estilos</Link>
-            </li>
-            <li>
-              <Link href="/">Início</Link>
-            </li>
-            <li>
-              <Link href="/sobre">Sobre</Link>
-            </li>
-          </ul>
-        </nav>
-        <Link href="#login">
-          <button className="login-button">Iniciar Sessão</button>
+        <div className={styles.navContainer}>
+          <nav className={styles.nav}>
+            <ul className={styles.navList}>
+              <li>
+                <Link href="/estilos" className={styles.navLink}>
+                  Estilos
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className={styles.navLink}>
+                  Início
+                </Link>
+              </li>
+              <li>
+                <Link href="/sobre" className={styles.navLink}>
+                  Sobre
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <Link href="#login" className={styles.loginButton}>
+          Iniciar Sessão
         </Link>
       </header>
-
-      <section id="estilos" className="main-content">
-        <div className="images">
+      <main id="estilos" className={styles.mainContent}>
+        <div className={styles.images}>
           <img src="imgs/corte1.jpg" alt="Corte 1" />
           <img src="imgs/corte2.jpg" alt="Corte 2" />
           <img src="imgs/corte3.jpg" alt="Corte 3" />
         </div>
-        <br />
-        <br />
-        <br />
-        <h1>OS MELHORES CORTES DA REGIÃO</h1>
-      </section>
-
-      <section className="info-section">
+        <h1 className={styles.sectionTitle}>OS MELHORES CORTES DA REGIÃO</h1>
+      </main>
+      <section className={styles.infoSection}>
         <div>
           <img src="imgs/mapa.png" alt="Endereço" />
-          <p>
-            R. Laudelino Rocha, 135 - Loja 03 - Maurício de Nassau, Caruaru - PE, 55012-690
-          </p>
+          <p>R. Laudelino Rocha, 135 - Loja 03 - Maurício de Nassau, Caruaru - PE, 55012-690</p>
         </div>
+        <div className={styles.divider}></div>
         <div>
           <img src="imgs/barbeiro.png" alt="Equipe" />
           <p>Contamos com uma equipe especializada para atender suas necessidades.</p>
         </div>
+        <div className={styles.divider}></div>
         <div>
           <img src="imgs/renda.png" alt="Preços" />
           <p>Oferecemos serviços de alta qualidade a um preço acessível.</p>
         </div>
       </section>
-
-      <footer>
+      <footer className={styles.footer}>
         <p>Siga-nos nas redes sociais</p>
-        <div className="social-icons">
+        <div className={styles.socialIcons}>
           <a href="https://wa.me/5581999999999" target="_blank" rel="noopener noreferrer">
             <img src="imgs/whatsapp.png" alt="WhatsApp" />
           </a>

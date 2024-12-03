@@ -1,0 +1,169 @@
+/* Home.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; /* Reduzindo a altura da navbar */
+  background: #333;
+  color: white;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer img {
+  width: 20px; /* Tamanho reduzido do ícone */
+  height: 20px; /* Tamanho reduzido do ícone */
+  margin-right: 5px;
+}
+
+.logoText {
+  font-size: 14px; /* Tamanho reduzido do texto */
+  font-weight: bold;
+}
+
+.navContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; /* Centraliza o menu horizontalmente */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px; /* Tamanho reduzido do texto */
+}
+
+.navLink:hover {
+  color: rgb(20, 194, 113);
+}
+
+.loginButton {
+  background: #fff;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.loginButton:hover {
+  background-color: rgb(33, 209, 127);
+  color: #fff;
+}
+
+.mainContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.images img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.infoSection {
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 10px;
+  background: #333;
+  color: white;
+  text-align: center; /* Centraliza o texto no eixo x */
+}
+
+.infoSection div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px; /* Reduzindo a largura */
+  text-align: center; /* Centraliza o texto no eixo x */
+  margin-bottom: 10px; /* Adiciona espaçamento entre as seções */
+}
+
+.infoSection img {
+  width: 30px; /* Reduzindo o tamanho da imagem */
+  height: 30px; /* Reduzindo o tamanho da imagem */
+  margin-bottom: 5px;
+}
+
+.infoSection p {
+  font-size: 12px; /* Aumentando o tamanho do texto */
+  margin: 5px 0;
+}
+
+.divider {
+  width: 1px; /* Ajusta a largura para 1px */
+  height: 100%; /* Ajusta a altura para 100% */
+  background: white;
+  margin: 0 20px; /* Adiciona espaçamento entre as divisões */
+}
+
+.footer {
+  display: flex;
+  flex-direction: column; /* Altera para coluna */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 10px;
+  background: #333;
+  color: white;
+  text-align: center; /* Centraliza o texto no eixo x */
+}
+
+.footer p {
+  margin-bottom: 10px; /* Adiciona espaçamento entre o texto e os ícones */
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column; /* Altera para coluna */
+  gap: 10px;
+  align-items: center;
+}
+
+.socialIcons img {
+  width: 20px;
+  height: 20px;
+}
