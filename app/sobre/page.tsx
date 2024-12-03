@@ -7,7 +7,7 @@ const Sobre: React.FC = () => {
     <div>
       <header>
         <div className="logo-container">
-          <img src="imgs/logo.PNG" alt="Barbearia Bom de Guerra" />
+          <img src="/imgs/logo.PNG" alt="Barbearia Bom de Guerra" />
           <h1>Barbearia do Siri</h1>
         </div>
         <nav>
@@ -27,6 +27,7 @@ const Sobre: React.FC = () => {
           <button className="login-button">Iniciar Sessão</button>
         </Link>
       </header>
+      
       <section className="main-content">
         <h1>Sobre a Barbearia</h1>
         <Image
@@ -37,26 +38,25 @@ const Sobre: React.FC = () => {
           className="rounded-lg shadow-lg"
         />
         <div className="text-box">
-        <p>
-  Na Barbearia do Siri, proporcionamos uma experiência única em cuidados masculinos. <br />
-  Com uma equipe altamente especializada e um ambiente acolhedor, buscamos transformar o cuidado com o seu visual em um momento de prazer. <br />
-  Nossa missão é oferecer serviços de excelência com um atendimento personalizado, tudo a preços acessíveis.
-</p>
-
+          <p>
+            Na Barbearia do Siri, proporcionamos uma experiência única em cuidados masculinos. <br />
+            Com uma equipe altamente especializada e um ambiente acolhedor, buscamos transformar o cuidado com o seu visual em um momento de prazer. <br />
+            Nossa missão é oferecer serviços de excelência com um atendimento personalizado, tudo a preços acessíveis.
+          </p>
         </div>
       </section>
 
       <section className="info-section">
         <div>
-          <img src="imgs/mapa.png" alt="Endereço" />
+          <img src="/imgs/mapa.png" alt="Endereço" />
           <p>R. Laudelino Rocha, 135 - Loja 03 - Maurício de Nassau, Caruaru - PE, 55012-690</p>
         </div>
         <div>
-          <img src="imgs/barbeiro.png" alt="Equipe" />
+          <img src="/imgs/barbeiro.png" alt="Equipe" />
           <p>Contamos com uma equipe especializada para atender suas necessidades.</p>
         </div>
         <div>
-          <img src="imgs/renda.png" alt="Preços" />
+          <img src="/imgs/renda.png" alt="Preços" />
           <p>Oferecemos serviços de alta qualidade a um preço acessível.</p>
         </div>
       </section>
@@ -64,8 +64,12 @@ const Sobre: React.FC = () => {
       <footer>
         <p>Siga-nos nas redes sociais</p>
         <div className="social-icons">
-          <img src="imgs/whatsapp.png" alt="WhatsApp" />
-          <img src="imgs/instagram.png" alt="Instagram" />
+          <Link href="https://wa.me/5581999999999" target="_blank" rel="noopener noreferrer">
+            <Image src="/imgs/whatsapp.png" alt="WhatsApp" width={40} height={40} />
+          </Link>
+          <Link href="https://www.instagram.com/barbeariadoedno/" target="_blank" rel="noopener noreferrer">
+            <Image src="/imgs/instagram.png" alt="Instagram" width={40} height={40} />
+          </Link>
         </div>
       </footer>
     </div>

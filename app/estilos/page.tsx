@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./estilos.module.css"; // Importando o CSS do módulo
+import styles from "./estilos.module.css"; 
 
 const Estilos: React.FC = () => {
   return (
@@ -126,12 +126,19 @@ const Estilos: React.FC = () => {
       <footer className={styles.footer}>
         <p>Siga-nos nas redes sociais</p>
         <div className="social-icons">
-          <img src="imgs/whatsapp.png" alt="WhatsApp" />
-          <img src="imgs/instagram.png" alt="Instagram" />
+          <a href="#" onClick={(e) => e.preventDefault()}>
+            <img src="imgs/whatsapp.png" alt="WhatsApp" />
+          </a>
+          <a
+            href="https://www.instagram.com/barbeariadoedno/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="imgs/instagram.png" alt="Instagram" />
+          </a>
         </div>
       </footer>
     </div>
   );
 };
-
 export default Estilos;

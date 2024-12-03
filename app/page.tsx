@@ -44,8 +44,7 @@ const BarbeariaBomDeGuerra: React.FC = () => {
         <div>
           <img src="imgs/mapa.png" alt="Endereço" />
           <p>
-            R. Laudelino Rocha, 135 - Loja 03 - Maurício de Nassau, Caruaru -
-            PE, 55012-690
+            R. Laudelino Rocha, 135 - Loja 03 - Maurício de Nassau, Caruaru - PE, 55012-690
           </p>
         </div>
         <div>
@@ -61,8 +60,12 @@ const BarbeariaBomDeGuerra: React.FC = () => {
       <footer>
         <p>Siga-nos nas redes sociais</p>
         <div className="social-icons">
-          <img src="imgs/whatsapp.png" alt="WhatsApp" />
-          <img src="imgs/instagram.png" alt="Instagram" />
+          <a href="https://wa.me/5581999999999" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/whatsapp.png" alt="WhatsApp" />
+          </a>
+          <a href="https://www.instagram.com/barbeariadoedno/" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/instagram.png" alt="Instagram" />
+          </a>
         </div>
       </footer>
     </div>
