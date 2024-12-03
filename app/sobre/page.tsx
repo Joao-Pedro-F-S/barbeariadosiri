@@ -1,6 +1,6 @@
-import Link from "next/link";
-import styles from "./sobre.module.css";
-import Image from "next/image"; // Importando o componente Image do Next.js
+import Link from 'next/link';
+import styles from './sobre.module.css';
+import Image from 'next/image'
 
 const BarbeariaBomDeGuerra: React.FC = () => {
   return (
