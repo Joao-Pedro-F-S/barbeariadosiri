@@ -1,0 +1,106 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/estilos/estilos.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+/* estilos.module.css */
+
+.estilos_main-content__YnmwZ {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .estilos_styles-container__W4nWd {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .estilos_style-item__sfPbE {
+    margin: 20px;
+    width: 30%;
+  }
+  
+  .estilos_style-item__sfPbE h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .estilos_style-item__sfPbE p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .estilos_footer__8aa6d {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .estilos_social-icons__IUJgI {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .estilos_social-icons__IUJgI img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .estilos_social-icons__IUJgI img:hover {
+    transform: scale(1.1);
+  }
+  
+  .estilos_footer__8aa6d p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .estilos_info-section__WEiG_ {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .estilos_info-section__WEiG_ div {
+    max-width: 200px;
+    flex: 1 1;
+  }
+  
+  .estilos_info-section__WEiG_ p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+.estilos_info-section__WEiG_ {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre as colunas */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .estilos_info-section__WEiG_ div {
+    max-width: 200px; /* Limita a largura das divs */
+    flex: 1 1;
+  }
+  
+  .estilos_info-section__WEiG_ img {
+    max-width: 30%; /* Garante que a imagem se ajuste ao tamanho da div */
+    height: auto; /* Mantém a proporção das imagens */
+    border-radius: 8px; /* Adiciona borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para um efeito visual */
+  }
+  
+  .estilos_info-section__WEiG_ p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  

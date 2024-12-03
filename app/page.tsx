@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -11,17 +12,23 @@ const BarbeariaBomDeGuerra: React.FC = () => {
         </div>
         <nav>
           <ul>
-            <li><a href="#">Estilos</a></li>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Agendamentos</a></li>
+            <li>
+              <Link href="/estilos">Estilos</Link>
+            </li>
+            <li>
+              <Link href="/">Início</Link>
+            </li>
+            <li>
+              <Link href="/sobre">Sobre</Link>
+            </li>
           </ul>
         </nav>
-        <a href="html/Entrar.html">
+        <Link href="#login">
           <button className="login-button">Iniciar Sessão</button>
-        </a>
+        </Link>
       </header>
 
-      <section className="main-content">
+      <section id="estilos" className="main-content">
         <div className="images">
           <img src="imgs/corte1.jpg" alt="Corte 1" />
           <img src="imgs/corte2.jpg" alt="Corte 2" />
@@ -36,7 +43,10 @@ const BarbeariaBomDeGuerra: React.FC = () => {
       <section className="info-section">
         <div>
           <img src="imgs/mapa.png" alt="Endereço" />
-          <p>R. Laudelino Rocha, 135 - Loja 03 - Maurício de Nassau, Caruaru - PE, 55012-690</p>
+          <p>
+            R. Laudelino Rocha, 135 - Loja 03 - Maurício de Nassau, Caruaru -
+            PE, 55012-690
+          </p>
         </div>
         <div>
           <img src="imgs/barbeiro.png" alt="Equipe" />
